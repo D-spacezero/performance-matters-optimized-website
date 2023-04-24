@@ -1,5 +1,11 @@
 <%- include('./partials/head.ejs') %>
 
+<% players.forEach(player => { %>
+    <div class="names">
+    <h1 class="jerseyNumber"><%= player.jerseyNumber %></h1>
+    <h1>. <%= player.name %></h1>
+    </div>
+<% }) %>
 
 
 <%- include('./partials/foot.ejs') %>
