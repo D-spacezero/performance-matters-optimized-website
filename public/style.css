@@ -298,7 +298,7 @@ body {
   }
   
   .ply-stats {  
-    grid-area: ply-gen;
+    grid-area: ply-stats;
     padding:0;
     text-align: center;
   }
