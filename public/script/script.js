@@ -27,3 +27,25 @@ firstWordBold.forEach(element => {
   const firstWord = words.shift();
   element.innerHTML = `<span class="first-name-bold">${firstWord}</span> ${words.join(' ')}`;
 });
+
+
+
+class RandomNumberGenerator {
+    constructor(element) {
+      this.element = element;
+      this.number = Math.floor(Math.random() * 3);
+    }
+  
+    generate() {
+      this.element.innerText = this.number;
+    }
+}
+  
+const randomNumbers = document.querySelectorAll(".random-number");
+randomNumbers.forEach((element) => {
+    const generator = new RandomNumberGenerator(element);
+    generator.generate();
+});
+  
+
+  

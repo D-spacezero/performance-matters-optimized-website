@@ -18,7 +18,7 @@
         
         <ul class="ply-nr">
           <% players.forEach(player => { %>
-          <li class="gender-badge jersey-numbers"><%= player.jerseyNumber %></li>
+          <li class="<%= player.gender.toLowerCase() === 'male' || player.gender.toLowerCase() === 'm' ? 'male' : player.gender.toLowerCase() === 'female' || player.gender.toLowerCase() === 'f' ? 'female' : 'grey' %> gender-badge jersey-numbers"><%= player.jerseyNumber %></li>
           <% }) %>
         </ul>  
         
@@ -33,7 +33,12 @@
         
         <ul class="ply-stats">
           <% players.forEach(player => { %>
-          <li><span class="block-badge">1</span><span class="goals-badge">2</span><span class="turnovers-badge">3</span><span class="assists-badge">4</span></li>
+          <li>
+            <span class="block-badge random-number"></span>
+            <span class="goals-badge random-number"></span>
+            <span class="turnovers-badge random-number"></span>
+            <span class="assists-badge random-number"></span>
+          </li>
           <% }) %>
         </ul>     
         

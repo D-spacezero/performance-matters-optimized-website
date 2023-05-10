@@ -244,7 +244,7 @@ body {
   
   .ply-data {
     display: grid;
-    grid-template-columns:20px 55px 208px 82px 20px;
+    grid-template-columns: 10px 55px 195px 115px 10px;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". ply-nr ply-name ply-stats .";
@@ -270,14 +270,25 @@ body {
     font-size:0.8em;
   }
   
-
   .gender-badge {
-    background-color:#B0E0FF;
+    background-color:#b0e0ff;
     border-radius:50%;
     height:16px;
     width:16px;
   }
   
+  .male {
+    background-color: #b0e0ff;
+  }
+
+  .female {
+    background-color: #ffafd7;
+  }
+
+  .grey {
+    background-color: lightgray;
+  }
+
   .ply-name {
     grid-area: ply-name;
     font-size: 14px;
