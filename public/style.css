@@ -92,7 +92,7 @@ body {
   
   .content-wrapper {
     display: grid;
-    grid-template-columns: 1fr 161px 161px 250px 250px 161px 161px 1fr;
+    grid-template-columns: 1fr 181px 181px 220px 220px 181px 181px 1fr;
     grid-template-rows: 310px 1fr;
     grid-gap: 24px;
     grid-template-areas:
@@ -135,7 +135,7 @@ body {
   .team-data {
     display: grid;
     padding:20px 0 0 0;
-    grid-template-columns:20px 55px 168px 40px 65px;
+    grid-template-columns:20px 55px 208px 40px 65px;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". flag team-name team-name team-info";
@@ -180,7 +180,7 @@ body {
   
   .point-cat {
     display: grid;
-    grid-template-columns:40px 240px 1fr 40px 40px;
+    grid-template-columns:40px 180px 1fr 40px 40px;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". cat refrence point .";
@@ -213,7 +213,7 @@ body {
   .team-data-o {
     display: grid;
     padding:20px 0 0 0;
-    grid-template-columns:20px 55px 168px 40px 65px;
+    grid-template-columns:20px 55px 208px 40px 65px;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". flag-o team-name-o team-name-o team-info-o";
@@ -244,7 +244,7 @@ body {
   
   .ply-data {
     display: grid;
-    grid-template-columns:20px 55px 168px 82px 20px;
+    grid-template-columns:20px 55px 208px 82px 20px;
     grid-template-rows: 1fr;
     grid-template-areas:
     ". ply-nr ply-name ply-stats .";
