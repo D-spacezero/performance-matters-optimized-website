@@ -281,7 +281,6 @@ body {
   .ply-name {
     grid-area: ply-name;
     font-size: 14px;
-    width:148px;
     /*padding-left:20px;*/
   }
 
