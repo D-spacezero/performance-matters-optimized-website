@@ -51,7 +51,7 @@
 
  <div class="score-box">
 
-  <div class="live-total"><h1>15 - 3</h1></div>
+  <div class="live-total"><h1><span class="goals-home-total"></span> - <span class="goals-out-total"></span></h1></div>
   <div class="point-cat">
     <ul class="cat">
       <li><a href="">Points played</a></li>
@@ -135,10 +135,10 @@
     <ul class="ply-stats">
       <% second25Players.forEach(function(player) { %>
       <li>
-        <span class="block-badge random-number-blocks"></span>
-        <span class="goals-badge random-number-goals"></span>
-        <span class="turnovers-badge random-number-turnovers"></span>
-        <span class="assists-badge random-number-assists"></span>
+        <span class="block-badge random-number-blocks-o"></span>
+        <span class="goals-badge random-number-goals-o"></span>
+        <span class="turnovers-badge random-number-turnovers-o"></span>
+        <span class="assists-badge random-number-assists-o"></span>
       </li>
       <% }) %>
     </ul>     
