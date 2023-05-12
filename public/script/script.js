@@ -372,5 +372,7 @@ firstWordBold.forEach(element => {
       totalGamePointsElement.innerText = totalGamePoints.toString();
       
       
-      // Repeat the above steps for other categories (turnovers, blocks, assists, turnovers-o, blocks-o, assists-o) with the desired total range and class names
-      
+      type="text/javascript">
+      function zoom() {
+          document.body.style.zoom = "125%" 
+      }      
