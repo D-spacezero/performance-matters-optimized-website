@@ -366,6 +366,11 @@ firstWordBold.forEach(element => {
       
       goalsHomeTotalElement.innerText = totalGoals.toString();
       goalsHomeTotalOElement.innerText = totalGoalsO.toString();
+
+      const totalGamePointsElement = document.querySelector(".total-game-points");
+      const totalGamePoints = totalGoals + totalGoalsO;
+      totalGamePointsElement.innerText = totalGamePoints.toString();
+      
       
       // Repeat the above steps for other categories (turnovers, blocks, assists, turnovers-o, blocks-o, assists-o) with the desired total range and class names
       
