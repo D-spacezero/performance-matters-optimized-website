@@ -374,5 +374,5 @@ firstWordBold.forEach(element => {
       
       type="text/javascript">
       function zoom() {
-          document.body.style.zoom = "125%" 
+          document.body.style.zoom = "200%" 
       }      
