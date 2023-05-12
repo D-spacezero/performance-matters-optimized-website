@@ -1,7 +1,7 @@
 import express from 'express'
 
 
-const url = "https://api.ultitv.fdnd.nl/api/v1/players?first=25"
+const url = "https://api.ultitv.fdnd.nl/api/v1/players?first=50"
 const data = await fetch(url).then((response) => response.json())
 
 

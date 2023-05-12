@@ -1,5 +1,8 @@
 <%- include('./partials/head.ejs') %>
 
+<% var first25Players = players.slice(0, 25); %>
+<% var second25Players = players.slice(25, 50); %>
+
 <div class="content-wrapper">
 
   <div class="home-team">
@@ -16,8 +19,8 @@
   
       <div class="ply-data">
         
-        <ul class="ply-nr">
-          <% players.forEach(player => { %>
+        <ul class="ply-nr">          
+          <% first25Players.forEach(function(player) { %>
           <li class="<%= player.gender.toLowerCase() === 'male' || player.gender.toLowerCase() === 'm' ? 'male' : player.gender.toLowerCase() === 'female' || player.gender.toLowerCase() === 'f' ? 'female' : 'grey' %> gender-badge jersey-numbers"><%= player.jerseyNumber %></li>
           <% }) %>
         </ul>  
@@ -25,14 +28,14 @@
 
         
         <ul class="ply-name">
-          <% players.forEach(player => { %>
+          <% first25Players.forEach(function(player) { %>
           <li class="player-name"><%= player.name %></li>
           <% }) %>
         </ul>
 
         
         <ul class="ply-stats">
-          <% players.forEach(player => { %>
+          <% first25Players.forEach(function(player) { %>
           <li>
             <span class="block-badge random-number-blocks"></span>
             <span class="goals-badge random-number-goals"></span>
@@ -113,62 +116,33 @@
   </div>
 
   <div class="ply-data">
-    <ul class="ply-nr">
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-          <li class="gender-badge">1</li>
-    </ul>  
-
-    <ul class="ply-name">
-        <li><span class="first-name">Lorcan</span> Salazar</li>
-        <li><span class="first-name">Kye</span> Mooney</li>
-        <li><span class="first-name">Farhan</span> O’Neill</li>
-        <li><span class="first-name">Salman</span> Poole</li>
-        <li><span class="first-name">Krystal</span> Faulkner</li>
-        <li><span class="first-name">Lulu</span> Strickland</li>
-        <li><span class="first-name">Lorcan</span> Salazar</li>
-        <li><span class="first-name">Kye</span> Mooney</li>
-        <li><span class="first-name">Farhan</span> O’Neill</li>
-        <li><span class="first-name">Salman</span> Poole</li>
-        <li><span class="first-name">Krystal</span> Faulkner</li>
-        <li><span class="first-name">Lulu</span> Strickland</li>
-        <li><span class="first-name">Lorcan</span> Salazar</li>
-        <li><span class="first-name">Kye</span> Mooney</li>
-        <li><span class="first-name">Farhan</span> O’Neill</li>
-        <li><span class="first-name">Salman</span> Poole</li>
-        <li><span class="first-name">Krystal</span> Faulkner</li>
-        <li><span class="first-name">Lulu</span> Strickland</li>
-        <li><span class="first-name">Lorcan</span> Salazar</li>
-        <li><span class="first-name">Kye</span> Mooney</li>
-        <li><span class="first-name">Farhan</span> O’Neill</li>
-        <li><span class="first-name">Salman</span> Poole</li>
-        <li><span class="first-name">Krystal</span> Faulkner</li>
-        <li><span class="first-name">Farhan</span> O’Neill</li>
-        <li><span class="first-name">Krystal</span> Faulkner</li>
-    </ul>
         
+    <ul class="ply-nr">          
+      <% second25Players.forEach(function(player) { %>
+      <li class="<%= player.gender.toLowerCase() === 'male' || player.gender.toLowerCase() === 'm' ? 'male' : player.gender.toLowerCase() === 'female' || player.gender.toLowerCase() === 'f' ? 'female' : 'grey' %> gender-badge jersey-numbers"><%= player.jerseyNumber %></li>
+      <% }) %>
+    </ul>  
+    
+
+    
+    <ul class="ply-name">
+      <% second25Players.forEach(function(player) { %>
+      <li class="player-name"><%= player.name %></li>
+      <% }) %>
+    </ul>
+
+    
+    <ul class="ply-stats">
+      <% second25Players.forEach(function(player) { %>
+      <li>
+        <span class="block-badge random-number-blocks"></span>
+        <span class="goals-badge random-number-goals"></span>
+        <span class="turnovers-badge random-number-turnovers"></span>
+        <span class="assists-badge random-number-assists"></span>
+      </li>
+      <% }) %>
+    </ul>     
+    
   </div>
 
 </div>
