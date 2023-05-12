@@ -33,7 +33,7 @@ firstWordBold.forEach(element => {
 class RandomNumberGenerator {
     constructor(element) {
       this.element = element;
-      this.number = Math.floor(Math.random() * 3);
+      this.number = Math.floor(Math.random() * 4);
     }
   
     generate() {

@@ -300,11 +300,12 @@ body {
   }
 
   .ply-stats>li>span {
-    margin-left:0.5em;
-    padding-left:0.4em;
-    padding-right:0.4em;
-    font-size:0.8em;
-    line-height:1em;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    line-height: 18px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
   }
 
   span.block-badge {
